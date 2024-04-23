@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Seite passt sich an den Viewport an, skalieren möglich -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Adder</title>
+    <!-- Include Bootstrap’s CSS and JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <!-- Include frontend fetch js-script -->
+    <script src="./javascripts/adderFetch.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Adder</h1>
+        <form id="add-form">
+            <div class="input-group">
+                <label for="a" class="input-group-text">a</label>
+                <input type="number" id="a" class="form-control">
+                <label for="b" class="input-group-text">b</label>
+                <input type="number" id="b" class="form-control">
+                <label for="c" class="input-group-text">c</label>
+                <input type="number" id="c" class="form-control">
+                <button class="btn btn-outline-secondary" type="submit"> = </button>
+                <span class="input-group-text" id="result">?</span>
+            </div>
+        </form>
+        <button id="getCookiesBtn" class="btn btn-primary mt-5">
+            Get Cookies
+        </button>
+        <div id="displayCookies">
+
+        </div>
+    </div>
+</body>
+</html>
