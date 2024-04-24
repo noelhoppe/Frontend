@@ -1,0 +1,6 @@
+### Lege die Cookies firstName=Noel und lastName=Haeuser an
+GET http://localhost:3000/cookies
+
+### Frage die gesetzten Cookies ab
+GET http://localhost:3000/inspectCookies
+Cookie: firstName=Noel; lastName=Haeuser // sende die Cookies im Header der GET Anfrage der Route /inspectCookies mit
